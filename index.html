@@ -47,29 +47,248 @@
     </nav>
 
     <!-- Hero -->
-    <section id="hero" class="bg-(--custom-gray) w-full">
-      <div>
-        <h3>find clothest that matches your style</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor dolore incidunt nemo sapiente excepturi ab provident repellat esse voluptates veniam inventore ad, repellendus ea non officia possimus officiis, aspernatur error.</p>
-        <button>Shop Now</button>
-        <div>
-          <div>
-            <div>200+</div>
-            <div>International Brands</div>
+    <section id="hero" class="bg-gray-100 flex h-screen">
+      <div class="pl-20 pt-20 w-2/3">
+        <h3 class="text-6xl font-archivo font-black uppercase w-full">find clothest that matches your style</h3>
+        <p class="text-gray-500 w-2/3 my-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor dolore incidunt nemo sapiente excepturi ab provident </p>
+        <button class="bg-black  text-white px-16 py-3 rounded-4xl">Shop Now</button>
+        <div class="flex gap-16 mt-20">
+          <div class="border-r-1 border-gray-400 px-4">
+            <div class="font-roboto font-bold text-4xl">200+</div>
+            <div class="text-gray-500 text-[14px] mt-2">International Brands</div>
           </div>
-          <div>
-            <div>2,000+</div>
-            <div>High-Quality Products</div>
+          <div class="border-r-1 border-gray-400 px-4">
+            <div class="font-roboto font-bold text-4xl">2,000+</div>
+            <div class="text-gray-500 text-[14px] mt-2">High-Quality Products</div>
           </div>
-          <div>
-            <div>30,000+</div>
-            <div>Happy Customers</div>
+          <div class="px-4">
+            <div class="font-roboto font-bold text-4xl">30,000+</div>
+            <div class="text-gray-500 text-[14px] mt-2">Happy Customers</div>
           </div>
         </div>
       </div>
-      <div>
-        <img src="/hero-image.png" alt="hero image">
+      <div class="">
+        <img src="/hero-image.png" alt="hero image" class="h-full w-full object-cover">
       </div>
     </section>
+
+    <!-- Brands -->
+    <section class="flex justify-evenly bg-black px-20 py-10 w-full">
+      <img src="/versace.png" alt="">
+      <img src="/zara.png" alt="">
+      <img src="/gucci.png" alt="">
+      <img src="/prada.png" alt="">
+      <img src="/calvinclain.png" alt="">
+    </section>
+
+    <!--section new arrivals -->
+    <section class="flex flex-col items-center pb-20">
+      <h2 class="font-archivo text-5xl mt-20">New arrivals</h2>
+      <div class="flex justify-evenly gap-4 mt-10">
+        <div class="">
+          <img src="/product01.png" alt="" class="rounded-xl h-[300px] fit-cover">
+          <h3 class="font-roboto font-bold mt-2">T-shirt With Tape Details</h3>
+          <img src="/starts.png" alt="">
+          <div class="flex justify-start text-xl py-2 gap-4 font-bold">
+            <span>$120</span><span  class="text-gray-500 line-through">$80</span><span  class="bg-red-300 text-red-600 text-xs flex justify-center items-center px-4 py-1 rounded-2xl">50%</span>
+          </div>
+        </div>
+        <div class="">
+          <img src="/product02.png" alt="" class="rounded-xl h-[300px] fit-cover">
+          <h3 class="font-roboto font-bold mt-2">Skiny Fit Jeans</h3>
+          <img src="/starts.png" alt="">
+          <div class="flex justify-start text-xl py-2 gap-4 font-bold">
+            <span>$240</span><span></span><span></span>
+          </div>
+        </div>
+        <div class="">
+          <img src="/product03.png" alt="" class="rounded-xl h-[300px] fit-cover">
+          <h3 class="font-roboto font-bold mt-2">Checkered Shirt</h3>
+          <img src="/starts.png" alt="">
+          <div class="flex justify-start text-xl py-2 gap-4 font-bold">
+            <span>$180</span><span></span><span></span>
+          </div>
+        </div>
+        <div class="">
+          <img src="/product04.png" alt="" class="rounded-xl h-[300px] fit-cover">
+          <h3 class="font-roboto font-bold mt-2">Sleeve Street T-shirt</h3>
+          <img src="/starts.png" alt="">
+          <div class="flex justify-start text-xl py-2 gap-4 font-bold">
+            <span>$320</span><span class="text-gray-500 line-through">$260</span><span  class="bg-red-300 text-red-600 text-xs flex justify-center items-center px-4 py-1 rounded-2xl">20%</span>
+          </div>
+        </div>
+      </div>
+      <button class="border-1 rounded-3xl px-18 py-3 mt-20 border-gray-300 flex justify-center items-center ">View all</button>
+    </section>
+
+    <!-- dress style -->
+    <section class="w-[80%] bg-gray-300 rounded-4xl p-20 mx-auto">
+      <h3 class="text-center text-5xl font-archivo uppercase">Browse by dress style</h3>
+      <div class="mt-20 flex flex-wrap gap-5 w-full">
+        <div class="h-32 rounded-3xl relative w-48 bg-white bg-[url(/style01.png)] bg-right bg-no-repeat">
+          <h5 class="absolute left-4 top-4 font-roboto font-black ">Casual</h5>
+        </div>
+        <div class="h-32 rounded-3xl relative w-2/3 bg-white bg-[url(/style02.png)] bg-right bg-no-repeat">
+          <h5 class="absolute left-4 top-4 font-roboto font-black ">Formal</h5>
+        </div>
+        <div class="h-32 rounded-3xl relative w-2/3 bg-white bg-[url(/style03.png)] bg-right bg-no-repeat">
+          <h5 class="absolute left-4 top-4 font-roboto font-black ">Party</h5>
+        </div>
+        <div class="h-32 rounded-3xl relative w-48 bg-white bg-[url(/style04.png)] bg-right bg-no-repeat">
+          <h5 class="absolute left-4 top-4 font-roboto font-black ">Gym</h5>
+        </div>
+      </div>
+    </section>
+
+    <!-- our happy customers title -->
+    <div class="w-[80%] mx-auto mt-20 flex justify-between">
+      <h3 class="font-archivo font-black uppercase text-3xl">Our happy customers</h3>
+      <div class="flex gap-4">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M6.75 15.75 3 12m0 0 3.75-3.75M3 12h18" />
+        </svg>
+
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
+        </svg>
+      </div>
+    </div>
+    <div class="flex gap-8 overflow-x-auto mt-8">
+      <div class="border-1 border-gray-300 rounded-2xl p-4 w-96 flex-shrink-0">
+        <img src="/starts.png" alt="">
+        <h6 class="font-archivo font-bold flex gap-2">
+          Search M
+          <svg xmlns="http://www.w3.org/2000/svg" fill="green" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 text-white">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+          </svg>
+
+        </h6>
+        <p class="text-gray-400 font-xs font-roboto">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ea iste illo iusto velit veniam? Aperiam soluta earum quod ullam sed? Ex deserunt quam beatae quae, enim tenetur molestiae repellat est!</p>
+      </div>
+      <div class="border-1 border-gray-300 rounded-2xl p-4 w-96 flex-shrink-0">
+        <img src="/starts.png" alt="">
+        <h6 class="font-archivo font-bold flex gap-2">
+          Search M
+          <svg xmlns="http://www.w3.org/2000/svg" fill="green" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 text-white">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+          </svg>
+
+        </h6>
+        <p class="text-gray-400 font-xs font-roboto">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ea iste illo iusto velit veniam? Aperiam soluta earum quod ullam sed? Ex deserunt quam beatae quae, enim tenetur molestiae repellat est!</p>
+      </div>
+      <div class="border-1 border-gray-300 rounded-2xl p-4 w-96 flex-shrink-0">
+        <img src="/starts.png" alt="">
+        <h6 class="font-archivo font-bold flex gap-2">
+          Alex K
+          <svg xmlns="http://www.w3.org/2000/svg" fill="green" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 text-white">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+          </svg>
+
+        </h6>
+        <p class="text-gray-400 font-xs font-roboto">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ea iste illo iusto velit veniam? Aperiam soluta earum quod ullam sed? Ex deserunt quam beatae quae, enim tenetur molestiae repellat est!</p>
+      </div>
+      <div class="border-1 border-gray-300 rounded-2xl p-4 w-96 flex-shrink-0">
+        <img src="/starts.png" alt="">
+        <h6 class="font-archivo font-bold flex gap-2">
+          James L
+          <svg xmlns="http://www.w3.org/2000/svg" fill="green" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 text-white">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+          </svg>
+
+        </h6>
+        <p class="text-gray-400 font-xs font-roboto">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ea iste illo iusto velit veniam? Aperiam soluta earum quod ullam sed? Ex deserunt quam beatae quae, enim tenetur molestiae repellat est!</p>
+      </div>
+      <div class="border-1 border-gray-300 rounded-2xl p-4 w-96 flex-shrink-0">
+        <img src="/starts.png" alt="">
+        <h6 class="font-archivo font-bold flex gap-2">
+          James L
+          <svg xmlns="http://www.w3.org/2000/svg" fill="green" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 text-white">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+          </svg>
+
+        </h6>
+        <p class="text-gray-400 font-xs font-roboto">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ea iste illo iusto velit veniam? Aperiam soluta earum quod ullam sed? Ex deserunt quam beatae quae, enim tenetur molestiae repellat est!</p>
+      </div>
+    </div>
+
+    <!-- footer -->
+    <footer class="w-screen bg-gray-300 mt-20">
+      <div class="bg-black text-gray-50 w-[80%] rounded-3xl flex py-10 px-20">
+        <div class="font-archivo font-black text-3xl w-4">stay up to date about to our last offers</div>
+        <div class="flex flex-col shrink-0 w-48">
+          <div>
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75" />
+            </svg>
+            <input type="text" placeholder="Enter your email address">
+          </div>
+          <button>Subscribe to newsletter</button>
+        </div>
+      </div>
+      <div class="flex gap-10 justify-evenly">
+        <div class="">
+          <h3>Shop.co</h3>
+          <p class="w-48">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam id rem, consequuntur aspernatur</p>
+          <div class="flex gap-1">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75" />
+            </svg>
+
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75" />
+            </svg>
+
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75" />
+            </svg>
+
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75" />
+            </svg>
+          </div>
+        </div>
+        <div>
+          <h6>Company</h6>
+          <ul>
+            <li>About</li>
+            <li>Feature</li>
+            <li>Works</li>
+            <li>Career</li>
+          </ul>
+        </div>
+        <div>
+          <h6>Company</h6>
+          <ul>
+            <li>About</li>
+            <li>Feature</li>
+            <li>Works</li>
+            <li>Career</li>
+          </ul>
+        </div>
+        <div>
+          <h6>Company</h6>
+          <ul>
+            <li>About</li>
+            <li>Feature</li>
+            <li>Works</li>
+            <li>Career</li>
+          </ul>
+        </div>
+        <div>
+          <h6>Company</h6>
+          <ul>
+            <li>About</li>
+            <li>Feature</li>
+            <li>Works</li>
+            <li>Career</li>
+          </ul>
+        </div>
+      </div>
+      <hr>
+      <div>
+        <p>All rights reserved &copy;2025</p>
+        <img src="/brands.png" alt="">
+      </div>
+    </footer>
   </body>
 </html>
