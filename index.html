@@ -11,16 +11,23 @@
     <!-- Top Advertise -->
     <div class="bg-black text-gray-50 w-screen flex justify-center relative p-2">
       <p class="text-xs font-roboto">Signup and get 20% offer.to your first order. <a href="#">Sign Up Now</a></p>
-      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 w-4 absolute right-4">
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 w-4 absolute right-4 hidden md:block lg:block xl:block 2xl:block">
         <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
       </svg>
     </div>
 
     <!-- Top NAVIGATION-->
-    <nav class="flex justify-between items-center p-8 font-roboto font-light">
-      <div class="text-4xl font-black font-archivo uppercase">Shop.co</div>
-      <ul class="flex gap-6">
+    <nav class="flex justify-between items-center p-4 lg:p-8 xl:p-8 2xl:p-8 font-roboto font-light">
+      
+      <div class="flex items-center justify-center gap-1">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 block lg:hidden xl:hidden 2xl:hidden h-6">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+        </svg>
+        <span class="lg:text-4xl xl:text-4xl 2xl:text-4xl text-2xl font-black font-archivo uppercase">Shop.co</span>      
+      </div>
+      <ul class="gap-6 hidden lg:flex xl:flex 2xl:flex">
         <li class="flex">
+          
           <span>Shop</span>
           <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 w-2">
             <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
@@ -30,13 +37,16 @@
         <li>New Arrivals</li>
         <li>Brands</li>
       </ul>
-      <div class="relative">
+      <div class="relative hidden lg:block xl:block 2xl:block">
         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 absolute left-2 text-gray-500 top-1">
           <path stroke-linecap="round" stroke-linejoin="round" d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
         </svg>
         <input type="text" placeholder="Search for products..." class="bg-gray-200 py-2 px-10 text-sm font-roboto w-96 rounded-4xl">
       </div>
       <div class="flex gap-4">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 lg:hidden xl:hidden 2xl:hidden">
+          <path stroke-linecap="round" stroke-linejoin="round" d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
+        </svg>
         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
           <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
         </svg>
@@ -47,45 +57,45 @@
     </nav>
 
     <!-- Hero -->
-    <section id="hero" class="bg-gray-100 flex h-screen">
-      <div class="pl-20 pt-20 w-2/3">
-        <h3 class="text-6xl font-archivo font-black uppercase w-full">find clothest that matches your style</h3>
-        <p class="text-gray-500 w-2/3 my-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor dolore incidunt nemo sapiente excepturi ab provident </p>
-        <button class="bg-black  text-white px-16 py-3 rounded-4xl">Shop Now</button>
-        <div class="flex gap-16 mt-20">
+    <section id="hero" class="bg-gray-100 flex flex-col lg:flex-row xl:flex-row 2xl:flex-row h-auto  lg:h-screen 2xl:h-screen xl:h-screen m-2">
+      <div class="px-2 lg:pl-20 xl:pl-20 2xl:pl-20 pt-20 w-full lg:w-2/3 xl:w-2/3 2xl:w-2/3">
+        <h3 class="text-3xl lg:text-6xl 2xl:text-6xl xl:text-6xl font-archivo font-black uppercase w-full">find clothest that matches your style</h3>
+        <p class="text-gray-500 text-xs lg:text-lg xl:text-lg 2xl:text-xl xl:w-2/3 2xl:w-2/3 lg:w-2/3 w-full my-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor dolore incidunt nemo sapiente excepturi ab provident </p>
+        <button class="bg-black  text-white px-16 py-3 rounded-4xl w-full lg:w-2/3 xl:w-2/3 2xl:w-2/3">Shop Now</button>
+        <div class="flex justify-center flex-wrap lg:flex-nowrap xl:flex-nowrap 2xl:flex-nowrap  gap-16 mt-20">
           <div class="border-r-1 border-gray-400 px-4">
-            <div class="font-roboto font-bold text-4xl">200+</div>
-            <div class="text-gray-500 text-[14px] mt-2">International Brands</div>
-          </div>
+            <div class="font-roboto font-bold text-2xl">200+</div>
+            <div class="text-gray-500 text-[11px] mt-2">International Brands</div>
+          </div> 
           <div class="border-r-1 border-gray-400 px-4">
-            <div class="font-roboto font-bold text-4xl">2,000+</div>
-            <div class="text-gray-500 text-[14px] mt-2">High-Quality Products</div>
+            <div class="font-roboto font-bold text-2xl">2,000+</div>
+            <div class="text-gray-500 text-[11px] mt-2">High-Quality Products</div>
           </div>
           <div class="px-4">
-            <div class="font-roboto font-bold text-4xl">30,000+</div>
-            <div class="text-gray-500 text-[14px] mt-2">Happy Customers</div>
+            <div class="font-roboto font-bold text-2xl">30,000+</div>
+            <div class="text-gray-500 text-[11px] mt-2">Happy Customers</div>
           </div>
         </div>
       </div>
       <div class="">
-        <img src="/hero-image.png" alt="hero image" class="h-full w-full object-cover">
+        <img src="/hero-image.png" alt="hero image" class="h-auto lg:h-full xl:h-full 2xl:h-full w-full object-cover">
       </div>
     </section>
 
     <!-- Brands -->
-    <section class="flex justify-evenly bg-black px-20 py-10 w-full">
-      <img src="/versace.png" alt="">
-      <img src="/zara.png" alt="">
-      <img src="/gucci.png" alt="">
-      <img src="/prada.png" alt="">
-      <img src="/calvinclain.png" alt="">
+    <section class="flex flex-wrap lg:flex-nowrap xl:flex-nowrap 2xl:flex-nowrap justify-evenly bg-black px-6 lg:px-20 xl:px-20 2xl:px-20 py-10 w-full">
+      <img class="w-24" src="/versace.png" alt="">
+      <img class="w-24" src="/zara.png" alt="">
+      <img class="w-24" src="/gucci.png" alt="">
+      <img class="w-24" src="/prada.png" alt="">
+      <img class="w-24" src="/calvinclain.png" alt="">
     </section>
 
     <!--section new arrivals -->
-    <section class="flex flex-col items-center pb-20">
-      <h2 class="font-archivo text-5xl mt-20">New arrivals</h2>
-      <div class="flex justify-evenly gap-4 mt-10">
-        <div class="">
+    <section class="flex flex-col items-center pb-20 mx-1">
+      <h2 class="font-archivo text-3xl lg:text-5xl xl:text-5xl 2xl:text-5xl mt-20">New arrivals</h2>
+      <div class="flex  flex-wrap justify-evenly gap-4 mt-10">
+        <div class="w-48">
           <img src="/product01.png" alt="" class="rounded-xl h-[300px] fit-cover">
           <h3 class="font-roboto font-bold mt-2">T-shirt With Tape Details</h3>
           <img src="/starts.png" alt="">
@@ -93,7 +103,7 @@
             <span>$120</span><span  class="text-gray-500 line-through">$80</span><span  class="bg-red-300 text-red-600 text-xs flex justify-center items-center px-4 py-1 rounded-2xl">50%</span>
           </div>
         </div>
-        <div class="">
+        <div class="w-48">
           <img src="/product02.png" alt="" class="rounded-xl h-[300px] fit-cover">
           <h3 class="font-roboto font-bold mt-2">Skiny Fit Jeans</h3>
           <img src="/starts.png" alt="">
@@ -101,7 +111,7 @@
             <span>$240</span><span></span><span></span>
           </div>
         </div>
-        <div class="">
+        <div class="w-48">
           <img src="/product03.png" alt="" class="rounded-xl h-[300px] fit-cover">
           <h3 class="font-roboto font-bold mt-2">Checkered Shirt</h3>
           <img src="/starts.png" alt="">
@@ -109,7 +119,7 @@
             <span>$180</span><span></span><span></span>
           </div>
         </div>
-        <div class="">
+        <div class="w-48">
           <img src="/product04.png" alt="" class="rounded-xl h-[300px] fit-cover">
           <h3 class="font-roboto font-bold mt-2">Sleeve Street T-shirt</h3>
           <img src="/starts.png" alt="">
@@ -118,23 +128,23 @@
           </div>
         </div>
       </div>
-      <button class="border-1 rounded-3xl px-18 py-3 mt-20 border-gray-300 flex justify-center items-center ">View all</button>
+      <button class="border-1 rounded-3xl lg:px-18 px-12 w-96 mx-4 xl:px-18 2xl:px-18 py-3 mt-20 border-gray-300 text-red-600">View all</button>
     </section>
 
     <!-- dress style -->
-    <section class="w-[80%] bg-gray-300 rounded-4xl p-20 mx-auto">
-      <h3 class="text-center text-5xl font-archivo uppercase">Browse by dress style</h3>
+    <section class="w-[80%] bg-gray-300 rounded-4xl p-4  lg:p-20 xl:p-20 2xl:p-20 mx-auto">
+      <h3 class="text-center text-2xl lg:text-5xl xl:text-5xl 2xl:text-5xl font-archivo uppercase">Browse by dress style</h3>
       <div class="mt-20 flex flex-wrap gap-5 w-full">
-        <div class="h-32 rounded-3xl relative w-48 bg-white bg-[url(/style01.png)] bg-right bg-no-repeat">
+        <div class="h-32 rounded-3xl relative w-full lg:w-48 xl:w-48 2xl:w-48 bg-white bg-[url(/style01.png)] bg-right bg-no-repeat">
           <h5 class="absolute left-4 top-4 font-roboto font-black ">Casual</h5>
         </div>
-        <div class="h-32 rounded-3xl relative w-2/3 bg-white bg-[url(/style02.png)] bg-right bg-no-repeat">
+        <div class="h-32 rounded-3xl relative w-full lg:w-2/3 xl:w-2/3 2xl:w-2/3 bg-white bg-[url(/style02.png)] bg-right bg-no-repeat">
           <h5 class="absolute left-4 top-4 font-roboto font-black ">Formal</h5>
         </div>
-        <div class="h-32 rounded-3xl relative w-2/3 bg-white bg-[url(/style03.png)] bg-right bg-no-repeat">
+        <div class="h-32 rounded-3xl relative w-full lg:w-2/3 xl:w-2/3 2xl:w-2/3 bg-white bg-[url(/style03.png)] bg-right bg-no-repeat">
           <h5 class="absolute left-4 top-4 font-roboto font-black ">Party</h5>
         </div>
-        <div class="h-32 rounded-3xl relative w-48 bg-white bg-[url(/style04.png)] bg-right bg-no-repeat">
+        <div class="h-32 rounded-3xl relative w-full lg:w-48 xl:w-48 2xl:w-48 bg-white bg-[url(/style04.png)] bg-right bg-no-repeat">
           <h5 class="absolute left-4 top-4 font-roboto font-black ">Gym</h5>
         </div>
       </div>
@@ -142,7 +152,7 @@
 
     <!-- our happy customers title -->
     <div class="w-[80%] mx-auto mt-20 flex justify-between">
-      <h3 class="font-archivo font-black uppercase text-3xl">Our happy customers</h3>
+      <h3 class="font-archivo font-black uppercase text-xl lg:text-3xl xl:text-3xl 2xl:text-3xl">Our happy customers</h3>
       <div class="flex gap-4">
         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
           <path stroke-linecap="round" stroke-linejoin="round" d="M6.75 15.75 3 12m0 0 3.75-3.75M3 12h18" />
@@ -154,7 +164,7 @@
       </div>
     </div>
     <div class="flex gap-8 overflow-x-auto mt-8">
-      <div class="border-1 border-gray-300 rounded-2xl p-4 w-96 flex-shrink-0">
+      <div class="border-1 border-gray-300 rounded-2xl p-4 w-90 flex-shrink-0">
         <img src="/starts.png" alt="">
         <h6 class="font-archivo font-bold flex gap-2">
           Search M
@@ -165,7 +175,7 @@
         </h6>
         <p class="text-gray-400 font-xs font-roboto">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ea iste illo iusto velit veniam? Aperiam soluta earum quod ullam sed? Ex deserunt quam beatae quae, enim tenetur molestiae repellat est!</p>
       </div>
-      <div class="border-1 border-gray-300 rounded-2xl p-4 w-96 flex-shrink-0">
+      <div class="border-1 border-gray-300 rounded-2xl p-4 w-90 flex-shrink-0">
         <img src="/starts.png" alt="">
         <h6 class="font-archivo font-bold flex gap-2">
           Search M
@@ -176,7 +186,7 @@
         </h6>
         <p class="text-gray-400 font-xs font-roboto">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ea iste illo iusto velit veniam? Aperiam soluta earum quod ullam sed? Ex deserunt quam beatae quae, enim tenetur molestiae repellat est!</p>
       </div>
-      <div class="border-1 border-gray-300 rounded-2xl p-4 w-96 flex-shrink-0">
+      <div class="border-1 border-gray-300 rounded-2xl p-4 w-90 flex-shrink-0">
         <img src="/starts.png" alt="">
         <h6 class="font-archivo font-bold flex gap-2">
           Alex K
@@ -187,7 +197,7 @@
         </h6>
         <p class="text-gray-400 font-xs font-roboto">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ea iste illo iusto velit veniam? Aperiam soluta earum quod ullam sed? Ex deserunt quam beatae quae, enim tenetur molestiae repellat est!</p>
       </div>
-      <div class="border-1 border-gray-300 rounded-2xl p-4 w-96 flex-shrink-0">
+      <div class="border-1 border-gray-300 rounded-2xl p-4 w-90 flex-shrink-0">
         <img src="/starts.png" alt="">
         <h6 class="font-archivo font-bold flex gap-2">
           James L
@@ -198,7 +208,7 @@
         </h6>
         <p class="text-gray-400 font-xs font-roboto">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ea iste illo iusto velit veniam? Aperiam soluta earum quod ullam sed? Ex deserunt quam beatae quae, enim tenetur molestiae repellat est!</p>
       </div>
-      <div class="border-1 border-gray-300 rounded-2xl p-4 w-96 flex-shrink-0">
+      <div class="border-1 border-gray-300 rounded-2xl p-4 w-90 flex-shrink-0">
         <img src="/starts.png" alt="">
         <h6 class="font-archivo font-bold flex gap-2">
           James L
@@ -212,44 +222,66 @@
     </div>
 
     <!-- footer -->
-    <footer class="w-screen bg-gray-300 mt-20">
-      <div class="bg-black text-gray-50 w-[80%] rounded-3xl flex py-10 px-20">
-        <div class="font-archivo font-black text-3xl w-4">stay up to date about to our last offers</div>
-        <div class="flex flex-col shrink-0 w-48">
-          <div>
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+    <footer class="w-screen bg-gray-300 mt-72 lg:mt-40 xl:mt-40 2xl:mt-40 relative">
+      <div class="bg-black text-gray-50 w-[90%]  lg:w-[80%] xl:w-[80%] 2xl:w-[80%] rounded-3xl flex flex-col gap-4 lg:gap-0 xl:gap-0 2xl:gap-0 lg:flex-row xl:flex-row 2xl:flex-row  justify-evenly py-10 px-20 absolute -top-64 lg:-top-20 xl:-top-20 2xl:-top-20 left-2 lg:left-40 xl:left-40 2xl:left-40">
+        <div class="font-archivo font-black text-xl  lg:text-4xl xl:text-4xl 2xl:text-4xl w-full lg:w-[40%] xl:w-[40%] 2xl:w-[40%]">stay up to date about to our last offers</div>
+        <div class="flex flex-col shrink-0 w-full lg:w-[30%] xl:w-[30%] 2xl:w-[30%]">
+          <div class="w-full relative">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 absolute left-1 top-2 text-gray-400">
               <path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75" />
             </svg>
-            <input type="text" placeholder="Enter your email address">
-          </div>
-          <button>Subscribe to newsletter</button>
-        </div>
-      </div>
-      <div class="flex gap-10 justify-evenly">
-        <div class="">
-          <h3>Shop.co</h3>
-          <p class="w-48">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam id rem, consequuntur aspernatur</p>
-          <div class="flex gap-1">
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
-              <path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75" />
-            </svg>
-
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
-              <path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75" />
-            </svg>
-
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
-              <path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75" />
-            </svg>
-
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
-              <path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75" />
-            </svg>
+            <input type="text" placeholder="Enter your email address" class="bg-gray-50 rounded-3xl placeholder:text-gray-400 placeholder:text-xs px-8 py-2 w-full">
+          
+          <button class="bg-gray-50 px-4 py-2 rounded-3xl text-gray-500 mt-2 w-full">Subscribe to newsletter</button>
           </div>
         </div>
+      </div>
+      <div class="block lg:hidden xl:hidden 2xl:hidden">
+          <h3 class="text-3xl uppercase font-archivo font-black pt-4">Shop.co</h3>
+          <p class="w-full not-first:text-gray-500 text-xs">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam id rem, consequuntur aspernatur</p>
+          <div class="flex gap-2 mt-8 w-48 justify-start">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75" />
+            </svg>
+
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75" />
+            </svg>
+
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75" />
+            </svg>
+
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75" />
+            </svg>
+          </div>
+        </div>
+      <div class="grid grid-cols-2 pl-4 lg:flex xl:flex 2xl:flex lg:gap-10 xl:gap-10 2xl:gap-10 lg:justify-evenly xl:justify-evenly 2xl:justify-evenly lg:pt-40 xl:pt-40 2xl:pt-40">
+        <div class="hidden lg:block xl:block 2xl:block">
+          <h3 class="text-3xl uppercase font-archivo font-black">Shop.co</h3>
+          <p class="w-48 not-first:text-gray-500 text-xs">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam id rem, consequuntur aspernatur</p>
+          <div class="flex gap-2 mt-8 w-48 justify-start">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75" />
+            </svg>
+
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75" />
+            </svg>
+
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75" />
+            </svg>
+
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75" />
+            </svg>
+          </div>
+        </div>
         <div>
-          <h6>Company</h6>
-          <ul>
+          <h6 class="font-roboto text-xl font-bold">Company</h6>
+          <ul class="text-gray-500">
             <li>About</li>
             <li>Feature</li>
             <li>Works</li>
@@ -257,8 +289,8 @@
           </ul>
         </div>
         <div>
-          <h6>Company</h6>
-          <ul>
+          <h6 class="font-roboto text-xl font-bold">Company</h6>
+          <ul class="text-gray-500">
             <li>About</li>
             <li>Feature</li>
             <li>Works</li>
@@ -266,8 +298,8 @@
           </ul>
         </div>
         <div>
-          <h6>Company</h6>
-          <ul>
+          <h6 class="font-roboto text-xl font-bold">Company</h6>
+          <ul class="text-gray-500">
             <li>About</li>
             <li>Feature</li>
             <li>Works</li>
@@ -275,8 +307,8 @@
           </ul>
         </div>
         <div>
-          <h6>Company</h6>
-          <ul>
+          <h6 class="font-roboto text-xl font-bold">Company</h6>
+          <ul class="text-gray-500">
             <li>About</li>
             <li>Feature</li>
             <li>Works</li>
@@ -284,9 +316,9 @@
           </ul>
         </div>
       </div>
-      <hr>
-      <div>
-        <p>All rights reserved &copy;2025</p>
+      <hr class="border-1 border-gray-400 mx-20">
+      <div class="mx-20 flex flex-col lg:flex-row xl:flex-row 2xl:flex-row justify-between">
+        <p class="font-roboto text-xs text-gray-400 mt-4">All rights reserved &copy;2025</p>
         <img src="/brands.png" alt="">
       </div>
     </footer>
